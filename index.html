@@ -15,38 +15,38 @@
         <div class="headWrapper">
             <div>
                 <label for="rowNum">Row Number</label>
-                <input type="number" id="rowNum" name="rowNum" placeholder="ex) 3" required>
+                <input type="number" id="rowNum" name="rowNum" value="3" required>
                 <label for="colNum">Col Number</label>
-                <input type="number" id="colNum" name="colNum" placeholder="ex) 2" required>
+                <input type="number" id="colNum" name="colNum" value="2" required>
             </div>
             <div>
                 <label for="tableWidth">Table with %</label>
-                <input type="number" id="tableWidth" name="tableWidth" placeholder="ex) 80">
+                <input type="number" id="tableWidth" name="tableWidth" value=80>
                 <label for="borderPixel">Border in pixel</label>
-                <input type="number" id="borderPixel" name="borderPixel" placeholder="ex) 2">
+                <input type="number" id="borderPixel" name="borderPixel" value="2">
             </div>
             <div class="bg-div">
                 <p>Background color</p>
                 <div><label for="tableBgColor">Table background</label>
-                    <input type="color" id="tableBgColor" name="tableBgColor"></div>
+                    <input type="color" id="tableBgColor" name="tableBgColor" value="lightblue"></div>
                 <div> <label for="headBgColor">Head background</label>
-                    <input type="color" id="headBgColor" name="headBgColor"></div>
+                    <input type="color" id="headBgColor" name="headBgColor" value="lightgreen"></div>
                 <div><label for="bodyBgColor">body background</label>
-                    <input type="color" id="bodyBgColor" name="bodyBgColor"></div>
+                    <input type="color" id="bodyBgColor" name="bodyBgColor" value="yellow"></div>
 
             </div>
             <div class="border-font-color">
                 <div><label for="borderColor">Border color</label>
-                    <input type="color" id="borderColor" name="borderColor"></div>
+                    <input type="color" id="borderColor" name="borderColor" value="grey"></div>
                 <div><label for="fontColor">Font color</label>
-                    <input type="color" id="fontColor" name="fontColor"></div>
+                    <input type="color" id="fontColor" name="fontColor" value="black"></div>
             </div>
             <div>
-                <label for="borderColor-select">Font type</label>
-                <select id="borderColor-select">
-                    <option value="">----Border color----</option>
-                    <option value="Times New Roman">Times New Roman</option>
+                <label for="fontType">Font type</label>
+                <select id="fontType">
+                    <option value="">----Font type----</option>
                     <option value="Arial">Arial</option>
+                    <option value="Times New Roman">Times New Roman</option>
                     <option value="Courier New">Courier New</option>
                     <option value="Verdana">Verdana</option>
                     <option value="Georgia">Georgia</option>
@@ -55,25 +55,21 @@
                 <label for="fontSize">Font size</label>
                 <select id="fontSize">
                     <option value="">----Font size----</option>
-                    <option value="100">100</option>
-                    <option value="200">200</option>
-                    <option value="300">300</option>
-                    <option value="400">400</option>
-                    <option value="500">500</option>
-                    <option value="600">600</option>
-                    <option value="700">700</option>
-                    <option value="800">800</option>
-                    <option value="900">900</option>
+                    <option value="medium">medium</option>
+                    <option value="xx-small">xx-small</option>
+                    <option value="x-small">x-small</option>
+                    <option value="small">small</option>
+                    <option value="large">large</option>
+                    <option value="x-large">x-large</option>
+                    <option value="xx-large">xx-large</option>
                 </select>
-                <label for="textAlign">textAlign</label>
-                <select id="textAlign">
+                <label for="AlignForText">textAlign</label>
+                <select id="AlignForText">
                     <option value="">----Text align----</option>
                     <option value="center">center</option>
                     <option value="left">left</option>
                     <option value="right">right</option>
                     <option value="justify">justify</option>
-                    <option value="initial">initial</option>
-                    <option value="inherit">inherit</option>
                 </select>
                 <!--<button class="generateBtn" onclick="createTable()">Generate Tool</button>-->
             </div>

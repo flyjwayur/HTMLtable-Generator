@@ -16,7 +16,7 @@
 .headWrapper{
     margin : auto;
     display : flex;
-    justify-content: center;
+    justify-content: space-between;
     background : rgb(14, 77, 146);
     padding: 5rem;
     color : rgb(255,255,255);
@@ -28,6 +28,7 @@
     padding: 0.2rem;
     display: flex;
     flex-direction: column;
+    flex-wrap : wrap;
     justify-content: center;
     background: #2b2b3a;
 }
@@ -39,8 +40,7 @@
 
 .headWrapper div input{
     margin : 0.5rem;
-    padding : 10px;
-    background : rgb(244,251,183);
+    background-Color : rgb(244,251,183);
 }
 
 .headWrapper .bg-div p{
@@ -52,12 +52,14 @@
 .headWrapper .bg-div div{
     display : flex;
     flex-direction : row;
+    flex-wrap : wrap;
     background : green;
 }
 
 .headWrapper .border-font-color div{
     background : #00a86b;
     display: flex;
+    flex-wrap : wrap;
     align-items: center;
 }
 
@@ -72,9 +74,18 @@
     padding : 1rem;
     font-size : 1rem;
     font-family : 'Courier New', Courier, monospace;
-    background : #cc6666;
-    color : white;
+    font-weight : 700;
+    background : rgba(204,102,102, 0.5);
+    color : #3d3d3d;
     border-radius: 10px;
+    outline : none;
+    border : 2px solid #ff3232;
+}
+
+
+.generateBtn:focus{
+    background :rgb(204,102,102);
+    color: white; 
 }
 
 .table-wrapper{
@@ -84,30 +95,19 @@
 
 table{
     width : 80%;
-    border : grey 2px solid;
     margin : auto;
+    border-collapse: collapse;
 }
 
 thead{
     height : 2rem;
 }
 
-tr{
-    width : 100%;
-    border : yellowgreen 1px solid;
-}
-
 th{
     height : 2rem;
-    border : #2b2b3a 2px solid;
-}
-
-tbody{
-    border : orange 1px solid;
 }
 
 td{
     width : 3rem;
     height : 2rem;
-    background : grey;
 }

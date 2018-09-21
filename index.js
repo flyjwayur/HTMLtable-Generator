@@ -4,7 +4,7 @@ const elements = {
     tableWrapper : document.querySelector('.table-wrapper')
 }
 
-const createTable = ()=>{
+const createTable = () => {
 
     elements.tableWrapper.innerHTML = "";
     console.log("warpper is emtpy?", elements.tableWrapper);
@@ -47,17 +47,74 @@ const createTable = ()=>{
     return table;
 }
 
-
-const changeTableWidth =(table)=>{
+const changeTableWidth =  newtable => {
     let tableWidth = document.querySelector('#tableWidth');
-    table.style.width = `${tableWidth.value}%`;
+    newtable.style.width = `${tableWidth.value}%`;
 }
 
-const changeBorderWidthPixel = (table) => {
+const changeBorderWidthPixel = newtable => {
     let borderPixel = document.querySelector('#borderPixel');
-    table.style.borderWidth = `${borderPixel.value}px`;
+    newtable.style.borderWidth = `${borderPixel.value}px`;
 }
 
+const changeTableBgColor = newtable => {
+    let tableBgColor = document.querySelector('#tableBgColor');
+    newtable.style.backgroundColor = tableBgColor.value;
+}
+
+const changeHeadBgColor = () => {
+    let headBgColor = document.querySelector('#headBgColor');
+    let tableHead =  document.querySelector('thead');
+    tableHead.style.backgroundColor = headBgColor.value;
+}
+
+const changeBodyBgColor = () => {
+    let bodyBgColor = document.querySelector('#bodyBgColor');
+    let tableBody = document.querySelector('tbody');
+    console.log("bodyBgColor", bodyBgColor);
+    console.log("tableBody",tableBody);
+    tableBody.style.background = bodyBgColor.value;
+}
+
+const changeBorderColor = newtable => {
+    let borderColor = document.querySelector('#borderColor');
+    let allTableTrs = document.querySelectorAll('tr');
+    let allTableThs = document.querySelectorAll('th');
+    let allTableTds = document.querySelectorAll('td');
+    let borderStyle = `2px solid ${borderColor.value}`;
+
+    newtable.style.border = borderStyle;
+
+    allTableTrs.forEach( tr => {
+        tr.style.border = borderStyle;
+    })
+    allTableThs.forEach( th => {
+        th.style.border = borderStyle;
+    })
+    allTableTds.forEach( td => {
+        td.style.border = borderStyle;
+    })
+}
+
+const changeFontColor = newtable => {
+    let fontColor = document.querySelector("#fontColor");
+    newtable.style.color = fontColor.value;
+}
+
+const changeFontType = newtable => {
+    let fontType = document.querySelector("#fontType");
+    newtable.style.fontFamily = fontType.value;
+}
+
+const changeFontSize = newtable => {
+    let sizeForFont = document.querySelector("#fontSize");
+    newtable.style.fontSize = sizeForFont.value;
+}
+
+const changeTextAlign = newtable => {
+    let AlignForText = document.querySelector("#AlignForText");
+    newtable.style.textAlign = AlignForText.value;
+}
 
 const generateBtn = document.querySelector(".generateBtn");
 
@@ -65,4 +122,12 @@ generateBtn.addEventListener("click", ()=>{
     let newtable = createTable();
     changeTableWidth(newtable);
     changeBorderWidthPixel(newtable);
+    changeTableBgColor(newtable);
+    changeHeadBgColor();
+    changeBodyBgColor();
+    changeBorderColor(newtable);
+    changeFontColor(newtable);
+    changeFontType(newtable);
+    changeFontSize(newtable);
+    changeTextAlign(newtable);
 })
