@@ -16,6 +16,7 @@
 .headWrapper{
     margin : auto;
     display : flex;
+    flex-wrap : wrap;
     justify-content: space-between;
     background : rgb(14, 77, 146);
     padding: 5rem;
