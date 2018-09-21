@@ -15,31 +15,31 @@
         <div class="headWrapper">
             <div>
                 <label for="rowNum">Row Number</label>
-                <input type="number" id="rowNum" name="rowNum" placeholder="3" required>
+                <input type="number" id="rowNum" name="rowNum" placeholder="ex) 3" required>
                 <label for="colNum">Col Number</label>
-                <input type="number" id="colNum" name="colNum" placeholder="2" required>
+                <input type="number" id="colNum" name="colNum" placeholder="ex) 2" required>
             </div>
             <div>
                 <label for="tableWidth">Table with %</label>
-                <input type="number" id="tableWidth" name="tableWidth" placeholder="80">
+                <input type="number" id="tableWidth" name="tableWidth" placeholder="ex) 80">
                 <label for="borderPixel">Border in pixel</label>
-                <input type="number" id="borderPixel" name="borderPixel" placeholder="2">
+                <input type="number" id="borderPixel" name="borderPixel" placeholder="ex) 2">
             </div>
             <div class="bg-div">
                 <p>Background color</p>
-                <div><label for="tableBgColor">Table bg</label>
+                <div><label for="tableBgColor">Table background</label>
                     <input type="color" id="tableBgColor" name="tableBgColor"></div>
-                <div> <label for="headBgColor">Head bg</label>
+                <div> <label for="headBgColor">Head background</label>
                     <input type="color" id="headBgColor" name="headBgColor"></div>
-                <div><label for="bodyBgColor">body bg</label>
+                <div><label for="bodyBgColor">body background</label>
                     <input type="color" id="bodyBgColor" name="bodyBgColor"></div>
 
             </div>
-            <div>
-                <label for="borderColor">Border color</label>
-                <input type="color" id="borderColor" name="borderColor">
-                <label for="fontColor">Font color</label>
-                <input type="color" id="fontColor" name="fontColor">
+            <div class="border-font-color">
+                <div><label for="borderColor">Border color</label>
+                    <input type="color" id="borderColor" name="borderColor"></div>
+                <div><label for="fontColor">Font color</label>
+                    <input type="color" id="fontColor" name="fontColor"></div>
             </div>
             <div>
                 <label for="borderColor-select">Font type</label>
@@ -77,8 +77,8 @@
                 </select>
                 <!--<button class="generateBtn" onclick="createTable()">Generate Tool</button>-->
             </div>
-            <button class="generateBtn">Generate Tool</button>
         </div>
+        <div class="btn-wrapper"><button class="generateBtn">Generate Tool</button></div>
         <div class="table-wrapper">
         </div>
     </div>
